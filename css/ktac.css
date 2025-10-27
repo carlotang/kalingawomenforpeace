@@ -373,6 +373,8 @@ footer *:not(.fa, .fas, .fab, .far) {
 .date {
 	font-size: smaller;
 	color: #D3D3D3;
+	text-align: left;
+	align-items: left;
 }
 
 .elena {
