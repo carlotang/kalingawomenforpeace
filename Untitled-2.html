@@ -1,0 +1,204 @@
+<style>
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+}
+
+nav {
+    background: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem;
+    display: block;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 220px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+/* Show on hover */
+.nav-links li:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Submenu */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+}
+
+/* Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #f8f9fa;
+        padding: 1rem 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        min-width: 100%;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+        position: static;
+    }
+}
+</style>
+
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="#">About the Capstone Project ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="rationale.php">Rationale</a>
+                        <a href="ocp.php">Project objectives</a>
+                        <a href="pto.php">Project team</a>
+                        <a href="ack.php">Acknowledgement</a>
+                        <a href="ref.php">References</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Kalinga Profile ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="ktac.php">Kalinga Tourism, Arts, and Culture</a>
+                        <a href="tks.php">Kalinga Political Society</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">The Bodong ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="whatisbodong.php">What is Bodong?</a>
+                        <a href="bodongprocess.php">The Bodong Process</a>
+                        <a href="pagta.php">The Pagta</a>
+                        <a href="peaceholder.php">How Pagtas Protect and Empower Women</a>
+                        <a href="whocanbe.php">Who Can be Peace Pact Holders?</a>
+                        <a href="whocanbe.php">Reflections of a former Peace Pact Holder</a>
+                        <a href="whocanbe.php">Kalinga Youth on Bodong</a>
+                        <a href="food.php">Food in Bodong</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Women for Peace</a>
+                    <div class="dropdown-menu">
+
+                        <!-- Submenu 1 -->
+                        <div class="dropdown-submenu">
+                            <a href="#">Women Peace Pact Holders</a>
+                            <div class="dropdown-menu">
+                                <a href="woman1.php">Carina: The Fabled Peace Warrior of Kalinga</a>
+                                <a href="woman2.php">Elena: Leading ‘Light’ of Her Land</a>
+                                <a href="woman3.php">Irene: Guardian of Peace</a>
+                            </div>
+                        </div>
+
+                        <!-- Submenu 2 -->
+                        <div class="dropdown-submenu">
+                            <a href="#">Women in Peacebuilding</a>
+                            <div class="dropdown-menu">
+                                <a href="indigenous.php">Indigenous Women in Dispute Settlement Mechanisms</a>
+                                <a href="engagement.php">Kalinga Women’s Engagement in Peace</a>
+                                <a href="empowered.php">Kalinga Women Shine!</a>
+                                <a href="tabukpagta.php">Tabuk Pagta: Kalinga’s Evolved Peace Code</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+
+
+
+                <li><a href="#foot">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+    </script>

@@ -1,0 +1,75 @@
+ <section id="articles" class="mt-4 mb-4" data-aos="fade-up" data-aos-duration="3000">
+        <div class="container-fluid">
+            <div class="title" id="stories">
+                <h1>Latest Articles</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4 d-flex">
+                    <div class="card text-center h-100">
+                        <img src="assets/images/BL.webp" alt="Balbalan" class="card-img-top">
+                        <!-- <strong class="text-white"><i>(Credits to the owner of the photo, @cassyjanine,
+                                steemKR)</i></strong> -->
+                        <div class="card-header">
+                            <h5 class="card-title">MAIM TO FAME Getting To Know Kalinga Better</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">There are rugged hills to climb, unique flavors to devour, history to
+                                review, picturesque scenery to capture, people to appreciate; Kalinga is waving.
+                                Before the emergence of modernized civilization, headhunting was once regarded as a
+                                noble pursuit and symbolized bravery for the natives</p>
+
+                        </div>
+                        <div class="card-footer mb-2">
+                            <a href="ktac.php" class="btn btn-dark mt-auto">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <div class="card text-center h-100">
+                        <img src="assets/images/bd1.webp" alt="Bodong" class="card-img-top">
+                        <!-- <strong><i>(Credits to the owner of the photo, @cassyjanine,
+                                steemKR)</i>
+                        </strong> -->
+                        <div class="card-header">
+                            <h5 class="card-title">BODONG: The Legal Ambit of Kalinga</h5>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">There was a time when people would deliberately presume that the rugged
+                                mountainous terrains of Kalinga were home to vicious warriors and savages which inspired
+                                various tales and legends to this day. Decades of headhunting and countless records of
+                                waging wars with other tribes</p>
+
+                        </div>
+                        <div class="card-footer mb-2">
+                            <a href="whatisbodong.php" class="btn btn-dark mt-auto">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <div class="card text-center h-100">
+                        <img src="assets/images/Pagta.webp" alt="Tanudan" class="card-img-top">
+                        <!-- <strong class="text-white"><i>(Credits to the owner of the photo, @cassyjanine,
+                                steemKR)</i>
+                        </strong> -->
+                        <div class="card-header">
+                            <h5 class="card-title">Pagta: Protecting and Empowering Kalinga Women</h5>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">A fundamental tenet in the iKalinga worldview is the deep respect and
+                                courtesy accorded to women, who are regarded as life-givers and peacemakers. This
+                                provides a mantle of protection to women who may be caught in a crossfire during tribal
+                                wars </p>
+
+                        </div>
+                        <div class="card-footer mb-2">
+                            <a href="peaceholder.php" class="btn btn-dark mt-auto">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

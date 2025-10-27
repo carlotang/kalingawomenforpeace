@@ -1,0 +1,865 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+
+
+body {
+	animation: transitionIn 0.75s;
+	font-family: "Montserrat", sans-serif;
+}
+
+@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* width */
+*::-webkit-scrollbar {
+	width: 3px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+	background: #f1f1f1;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+	background: #aaa;
+}
+
+a {
+	text-decoration: none;
+}
+
+.card {
+	width: 800px;
+}
+
+.log {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+
+}
+
+.logo {
+	text-align: center;
+
+}
+
+.logo h3 {
+	font-family: "Montserrat", sans-serif;
+	/* font-family: 'Alfa Slab One', sans-serif; */
+	font-weight: bold;
+	/* text-shadow: 4px 1px 0px rgba(0, 0, 0, 0.2); */
+	letter-spacing: 3px;
+	text-transform: uppercase;
+
+}
+
+.logo p {
+	letter-spacing: 5px;
+	line-height: 10px;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+
+.newspaper {
+	column-count: 3;
+
+}
+
+.about {
+	padding: 20px;
+	background-image: linear-gradient(to bottom, #2b2c2b, #2a2b2a, #292928, #282827, #272726);
+	color: #fff;
+
+}
+
+.about h1 {
+	opacity: 0;
+	transition: opacity .35s .45s ease-out;
+}
+
+.about h1.is-visible {
+	opacity: 1;
+}
+
+.about h2 {
+	opacity: 0;
+	transition: opacity .40s .50s ease-out;
+}
+
+.about h2.is-visible {
+	opacity: 1;
+}
+
+.about .newspaper {
+	opacity: 0;
+	transition: opacity .45s .55s ease-out;
+
+}
+
+.about .newspaper.is-visible {
+	opacity: 1;
+}
+
+.about .center {
+	text-align: center;
+
+}
+
+/* Create two equal columns that floats next to each other */
+
+
+
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+	position: absolute;
+}
+
+.content {
+	z-index: 2;
+}
+
+
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	color: #fff;
+	border-radius: 5px;
+	margin-top: 25px;
+	opacity: 0.7;
+}
+
+.btn:hover {
+	transform: scale(0.98);
+}
+
+
+.container {
+	text-align: center;
+}
+
+/* .container p {
+	font-style: italic;
+} */
+
+.item {
+	transition: .5s ease-in-out;
+}
+
+.item:hover {
+	filter: brightness(80%);
+}
+
+.title {
+	font-family: "Montserrat", sans-serif;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+
+.content h3 {
+
+	font-family: 'Alfa Slab One', cursive;
+	text-transform: uppercase;
+	font-size: 8vw;
+	text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+	mix-blend-mode: overlay;
+	opacity: 0.5;
+
+}
+
+.content h4 {
+	font-family: 'Alfa Slab One', sans-serif;
+
+	font-size: 2vw;
+	text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+	mix-blend-mode: overlay;
+	opacity: 0.5;
+	letter-spacing: 10.5px;
+}
+
+
+
+.container h3 {
+	font-family: "Montserrat", sans-serif;
+}
+
+.container p {
+	font-family: "Montserrat", sans-serif;
+}
+
+.carousel-inner h3 {
+	font-family: 'Alfa Slab One', cursive;
+}
+
+.carousel-inner p {
+	font-family: "Montserrat", sans-serif;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	left: 10px;
+}
+
+.bottom h5 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.2vw;
+	text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+	mix-blend-mode: overlay;
+	opacity: 0.5;
+	letter-spacing: 2px;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+
+#back-to-top-btn {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 26px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	color: #333;
+	cursor: pointer;
+	outline: none;
+	border: 3px solid #333;
+	border-radius: 50%;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+	background-color: #333;
+	color: #fff;
+}
+
+.btnEntrance {
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.btnExit {
+	animation-duration: 0.25s;
+	animation-fill-mode: both;
+	animation-name: btnExit;
+}
+
+@keyframes btnExit {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+}
+
+.item {
+	transition: .5s ease-in-out;
+}
+
+.item:hover {
+	filter: brightness(80%);
+}
+
+.title {
+	font-family: "Montserrat", sans-serif;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+
+.content h3 {
+
+	font-family: 'Alfa Slab One', cursive;
+	text-transform: uppercase;
+	font-size: 8vw;
+	text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+	mix-blend-mode: overlay;
+	opacity: 0.5;
+
+}
+
+.content h4 {
+	font-family: 'Alfa Slab One', sans-serif;
+	font-size: 2.5vw;
+	text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+	mix-blend-mode: overlay;
+	opacity: 0.5;
+	letter-spacing: 10.5px;
+}
+
+
+
+.container h3 {
+	font-family: "Montserrat", sans-serif;
+}
+
+.container p {
+	font-family: "Montserrat", sans-serif;
+}
+
+.carousel-inner h3 {
+	font-family: 'Alfa Slab One', cursive;
+}
+
+.carousel-inner p {
+	font-family: "Montserrat", sans-serif;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	left: 10px;
+}
+
+.bottom h5 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.2vw;
+	text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+	mix-blend-mode: overlay;
+	opacity: 0.5;
+	letter-spacing: 2px;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+
+.card-text {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	/* number of lines to show */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.card-footer {
+	background-color: transparent !important;
+	border-top: none !important;
+	min-height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-header {
+	background-color: transparent !important;
+	border-top: none !important;
+	border-bottom: none !important;
+	/* optional, removes the top border */
+
+}
+
+.card-title {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	/* show only 2 lines */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.carousel-wrapper {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.carousel-viewport {
+	overflow: hidden;
+	width: 100%;
+}
+
+.carousel-container {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 20px;
+	transition: transform 0.4s ease;
+}
+
+.carousel-container::-webkit-scrollbar {
+	display: none;
+	/* hide scrollbar */
+}
+
+.carousel-container .card {
+	flex: 0 0 calc((100% - 40px) / 3);
+	/* 3 cards per view */
+	max-width: calc((100% - 40px) / 3);
+}
+
+.carousel-container .card-header {
+	min-height: 80px;
+	/* match tallest title */
+}
+
+.carousel-container .card-body {
+	flex: 1;
+	padding: 0.4rem 0.60rem !important;
+	/* stretch evenly */
+}
+
+.carousel-container .card-footer {
+	min-height: 60px;
+	display: flex;
+	align-items: left;
+	justify-content: left;
+}
+
+.carousel-container .card-header {
+	padding: 0.4rem 0.60rem !important;
+	/* smaller padding */
+	min-height: 60px !important;
+	/* adjust based on your longest title */
+	display: flex !important;
+	align-items: center !important;
+	/* vertically center the title */
+	justify-content: left !important;
+	/* optional: center horizontally */
+	text-align: left !important;
+}
+
+.carousel-container .card-img-top {
+	height: 400px !important;
+
+	/* set a fixed height you want */
+	object-fit: cover !important;
+	/* keeps aspect ratio, crops if needed */
+	width: 100% !important;
+	/* make sure it fills the card width */
+	border-top-left-radius: 0.25rem;
+	/* optional: match card styling */
+	border-top-right-radius: 0.25rem;
+}
+
+/* Prev/Next buttons */
+.carousel-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 10;
+	border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+	.carousel-container .card {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.carousel-wrapper {
+	position: relative;
+}
+
+.carousel-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	z-index: 10;
+	width: 50px;
+	/* desktop size */
+	height: 50px;
+	/* desktop size */
+	border-radius: 50%;
+	font-size: 24px;
+	/* desktop arrow size */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.2s ease, background 0.2s ease;
+}
+
+/* Adjust arrow positions */
+.carousel-btn.prev {
+	left: 5px;
+}
+
+.carousel-btn.next {
+	right: 5px;
+}
+
+/* Hover effect */
+.carousel-btn:hover {
+	background: rgba(0, 0, 0, 0.8);
+	transform: translateY(-50%) scale(1.1);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+	.carousel-btn {
+		width: 35px;
+		/* smaller width */
+		height: 35px;
+		/* smaller height */
+		font-size: 18px;
+		/* smaller arrow */
+	}
+
+	.carousel-btn.prev {
+		left: 2px;
+	}
+
+	/* adjust position if needed */
+	.carousel-btn.next {
+		right: 2px;
+	}
+}
+
+
+.carousel-btn:hover {
+	background: rgba(0, 0, 0, 0.8);
+	transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-container .card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-container .card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-wrapper {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.img-wrapper img {
+	display: block;
+	width: 100%;
+	height: auto;
+	/* border-radius: 10px; */
+	/* optional */
+}
+
+.overlay-text,
+.overlay-text-long {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	/* fixed height */
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	display: flex;
+	/* center text vertically */
+	align-items: center;
+	justify-content: center;
+	/* center horizontally */
+	text-align: center;
+	padding: 0 10px;
+	/* side padding */
+	box-sizing: border-box;
+	font-size: 1rem;
+}
+
+.contento {
+	text-align: left;
+	letter-spacing: 1px;
+	/* text-indent: 50px; */
+}
+
+footer,
+footer *:not(.fa, .fas, .fab, .far) {
+	font-family: "Courier Prime", monospace !important;
+	color: #71797E;
+}
+
+.cover-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: grayscale(100%);
+	transition: filter 0.5s ease-in-out;
+	animation: bwColor 6s infinite alternate;
+	opacity: 70%;
+}
+
+.cover-img:hover {
+	filter: grayscale(0%);
+	animation: none;
+}
+
+@keyframes bwColor {
+	0% {
+		filter: grayscale(100%);
+	}
+
+	50% {
+		filter: grayscale(0%);
+	}
+
+	100% {
+		filter: grayscale(100%);
+	}
+}
+
+.image-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	/* full screen height */
+	overflow: hidden;
+}
+
+/* Overlay text styling */
+.overlay-text-title {
+	position: absolute;
+	top: 74%;
+	/* controls the whole block position */
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+	opacity: 0.9;
+	background: none;
+
+}
+
+.overlay-text-title .title {
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 8rem;
+	letter-spacing: 5px;
+	color: #fff;
+	text-shadow:
+		2px 2px 0px #000,
+		4px 4px 0px #444,
+		6px 6px 0px #666,
+		8px 8px 15px rgba(0, 0, 0, 0.8);
+	margin: 0;
+	/* remove default margins */
+
+	/* small space below title */
+}
+
+.overlay-text-title .subtitle {
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 3rem;
+	margin: -20px 0 0 0;
+	text-shadow:
+		2px 2px 0px #000;
+	/* remove extra space */
+}
+
+/* Responsive typography */
+@media (max-width: 1200px) {
+	.overlay-text-title .title {
+		font-size: 6rem;
+	}
+
+	.overlay-text-title .subtitle {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.overlay-text-title .title {
+		font-size: 4rem;
+	}
+
+	.overlay-text-title .subtitle {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.overlay-text-title .title {
+		font-size: 2.5rem;
+		letter-spacing: 2px;
+	}
+
+	.overlay-text-title .subtitle {
+		font-size: 1rem;
+	}
+}
+
+.slide-layout {
+	height: 100vh;
+	/* full screen height */
+}
+
+.slide-left {
+	flex: 0.4;
+	/* 40% width */
+}
+
+.slide-right {
+	flex: 0.6;
+	/* 60% width */
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	background-size: cover;
+	background-position: center;
+	padding: 40px;
+	overflow: hidden;
+}
+
+
+.slide-left img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* .slide-right {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	background-size: cover;
+	background-position: center;
+	padding: 40px;
+	overflow: hidden;
+} */
+
+/* White overlay across entire right side */
+.slide-right::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.7);
+	/* adjust opacity here */
+	z-index: 1;
+}
+
+/* Text stays above overlay */
+.slide-text {
+	position: relative;
+	z-index: 2;
+	max-width: 800px;
+
+}
+
+.slide-text h3,
+p {
+	font-family: "Montserrat", sans-serif;
+}
+
+.slide-text p {
+	text-align: left;
+	letter-spacing: 1px;
+
+}
+
+.slide-text h3 {
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.readmore {
+	text-decoration: none;
+	color: #000;
+}
+
+.readmore:hover {
+	color: #666;
+}

@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+	animation: transitionIn 0.75s;
+	/* font-family: 'Courier Prime', monospace; */
+
+}
+
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* width */
+*::-webkit-scrollbar {
+	width: 3px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+	background: #f1f1f1;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+	background: #aaa;
+}
+
+@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+#back-to-top-btn {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 26px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	color: #333;
+	cursor: pointer;
+	outline: none;
+	border: 3px solid #333;
+	border-radius: 50%;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+	background-color: #333;
+	color: #fff;
+}
+
+.btnEntrance {
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.btnExit {
+	animation-duration: 0.25s;
+	animation-fill-mode: both;
+	animation-name: btnExit;
+}
+
+@keyframes btnExit {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+}
+
+/* .container {
+	padding-left: 100px;
+	padding-right: 100px;
+} */
+
+
+.ack .title {
+	/* font-family: 'Source Code Pro', monospace; */
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.ack .titlelong {
+	/* font-family: 'Source Code Pro', monospace; */
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.ack .subtitle {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	font-style: italic;
+	margin-top: 5px;
+}
+
+.ack .content {
+	font-family: "Montserrat", sans-serif;
+	text-align: left;
+	letter-spacing: 1px;
+	color: #71797E;
+	/* text-indent: 50px; */
+}
+
+.ack .contentLeft {
+	font-family: "Montserrat", sans-serif;
+	text-align: left;
+	letter-spacing: 1px;
+	color: #71797E;
+
+	/* text-indent: 50px; */
+}
+
+.ack .othertitle {
+	font-family: "Montserrat", sans-serif;
+	text-align: left;
+}
+
+
+.container .image {
+	float: left;
+	width: 40%;
+	/* take 40% of container width */
+	height: auto;
+	margin: 0 20px 20px 0;
+	max-width: 100%;
+}
+
+.container .image5 {
+	float: left;
+	width: 25%;
+	/* take 40% of container width */
+	height: auto;
+	margin-right: 10px;
+	max-width: 100%;
+}
+
+.container .image3 {
+	float: left;
+	width: 40%;
+	/* take up 40% of the container width */
+	height: auto;
+	/* keep aspect ratio */
+	margin: 0 20px 20px 0;
+	/* space between image and text */
+	max-width: 100%;
+}
+
+.container .image2 {
+	float: right;
+	width: 43%;
+	/* take up 40% of the container width */
+	height: auto;
+	/* keep aspect ratio */
+	/* margin: 20px 20px 0 0; */
+	margin-top: 20px;
+	margin-left: 20px;
+
+	/* space between image and text */
+	max-width: 100%;
+}
+
+.container .image9 {
+	float: right;
+	width: 35%;
+	/* take up 40% of the container width */
+	height: auto;
+	/* keep aspect ratio */
+	/* margin: 20px 20px 0 0; */
+	margin-top: 20px;
+	margin-left: 20px;
+
+	/* space between image and text */
+	max-width: 100%;
+}
+
+.container .image6 {
+	float: left;
+	width: 40%;
+	/* take up 40% of the container width */
+	height: auto;
+	/* keep aspect ratio */
+	/* margin: 20px 20px 0 0; */
+	margin-top: 20px;
+	margin-right: 20px;
+	/* space between image and text */
+	max-width: 100%;
+}
+
+.container .image7 {
+	float: right;
+	width: 48%;
+	/* take up 40% of the container width */
+	height: auto;
+	/* keep aspect ratio */
+	/* margin: 20px 20px 0 0; */
+	margin-top: 20px;
+	margin-left: 20px;
+
+	/* space between image and text */
+	max-width: 100%;
+}
+
+.container .center {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.container .centerimg {
+	display: block;
+	margin: 0 auto 20px auto;
+	width: 70%;
+	/* not too wide on desktop */
+	height: auto;
+	/* keep aspect ratio */
+	max-width: 100%;
+}
+
+.container .centerimg2 {
+	display: block;
+	margin: 0 auto 20px auto;
+	width: 30%;
+	/* not too wide on desktop */
+	height: auto;
+	/* keep aspect ratio */
+	max-width: 100%;
+}
+
+.centerIm {
+	display: flex;
+	justify-content: center;
+	/* center horizontally */
+	align-items: center;
+	/* align vertically */
+	gap: 10px;
+}
+
+.container .centerimg3 {
+	width: 22%;
+	height: auto;
+	max-width: 100%;
+	margin: 0;
+	/* remove default margins */
+}
+
+
+
+
+.log {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+
+}
+
+.logo {
+	text-align: center;
+
+}
+
+
+
+.sticky-nav {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background: #f8f9fa;
+	/* keeps background solid */
+}
+
+.link {
+	text-decoration: none;
+	font-family: 'Courier Prime', monospace;
+}
+
+/* For smaller screens, stop floating and center the image */
+@media (max-width: 768px) {
+	.container .image2 {
+		float: none;
+		display: block;
+		width: 100%;
+		/* image takes full width */
+		margin: 0 auto 20px auto;
+	}
+
+	.container .image3 {
+		float: none;
+		display: block;
+		width: 100%;
+		/* image takes full width */
+		margin: 0 auto 20px auto;
+	}
+
+	.container .image {
+		float: none;
+		/* remove float */
+		display: block;
+		width: 100%;
+		/* take full width */
+		margin: 0 auto 20px auto;
+		/* center with spacing */
+	}
+
+	.container .content {
+		margin: 0;
+		text-indent: 20px;
+	}
+
+	.container .centerimg {
+		width: 100%;
+		/* full width on small screens */
+	}
+
+	.container .centerimg2 {
+		width: 100%;
+		/* full width on small screens */
+	}
+
+}
+
+footer,
+footer *:not(.fa, .fas, .fab, .far) {
+	font-family: "Courier Prime", monospace !important;
+	color: #71797E;
+}
+
+.date {
+	font-size: smaller;
+	color: #D3D3D3;
+}
+
+.elena {
+	height: 260px;
+	/* set your fixed height */
+	object-fit: cover;
+	/* keeps image proportional while filling */
+	border-radius: 8px;
+	/* optional */
+
+}
+
+.carina {
+	height: 580px;
+	/* set your fixed height */
+	object-fit: cover;
+	/* keeps image proportional while filling */
+	border-radius: 8px;
+	/* optional */
+}
+
+.irene {
+	height: 620px;
+	/* set your fixed height */
+	object-fit: cover;
+	/* keeps image proportional while filling */
+	border-radius: 8px;
+	/* optional */
+}
+
+.container .image20 {
+	float: right;
+	width: 30%;
+	/* take up 40% of the container width */
+	height: auto;
+	/* keep aspect ratio */
+	/* margin: 20px 20px 0 0; */
+	margin-top: 10px;
+	margin-left: 20px;
+
+	/* space between image and text */
+	max-width: 100%;
+}
+
+.container .image21 {
+	float: left;
+	width: 30%;
+	/* take up 40% of the container width */
+	height: auto;
+	/* keep aspect ratio */
+	/* margin: 20px 20px 0 0; */
+	margin-top: 10px;
+	margin-right: 20px;
+
+	/* space between image and text */
+	max-width: 100%;
+}

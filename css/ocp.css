@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+	animation: transitionIn 0.75s;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+
+@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* width */
+*::-webkit-scrollbar {
+	width: 3px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+	background: #f1f1f1;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+	background: #aaa;
+}
+
+/* .container {
+	padding-left: 100px;
+	padding-right: 100px;
+} */
+
+.pto .title {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.pto .content {
+	font-family: "Montserrat", sans-serif;
+	text-align: left;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	margin-right: 80;
+	margin-left: 80;
+	color: #71797E;
+	/* text-indent: 50px; */
+
+}
+
+.log {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+
+}
+
+.logo {
+	text-align: center;
+
+}
+
+#back-to-top-btn {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 26px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	color: #333;
+	cursor: pointer;
+	outline: none;
+	border: 3px solid #333;
+	border-radius: 50%;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+	background-color: #333;
+	color: #fff;
+}
+
+.btnEntrance {
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.btnExit {
+	animation-duration: 0.25s;
+	animation-fill-mode: both;
+	animation-name: btnExit;
+}
+
+@keyframes btnExit {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+}
+
+
+
+.team-section {
+	text-align: center;
+	margin: 20px 0;
+	color: #71797E;
+	font-family: "Montserrat", sans-serif;
+}
+
+.tribal-title {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 40px;
+	color: #000;
+	/* black title */
+}
+
+.team-row {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	margin-bottom: 30px;
+}
+
+.team-member {
+	text-align: center;
+	max-width: 180px;
+	flex: 1 1 auto;
+}
+
+.team-member img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	/* circle shape */
+	border: 3px solid #000;
+	/* black border */
+	margin-bottom: 10px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+	/* black & white effect */
+}
+
+.team-member img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+	filter: grayscale(0%);
+	/* turn back to color on hover */
+}
+
+.team-member p {
+	font-family: "Montserrat", sans-serif;
+	color: #71797E;
+
+	font-size: 0.95em;
+	margin: 0;
+}
+
+.sticky-nav {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background: #f8f9fa;
+	/* keeps background solid */
+}
+
+
+
+footer,
+footer *:not(.fa, .fas, .fab, .far) {
+	font-family: "Courier Prime", monospace !important;
+	color: #71797E;
+}
